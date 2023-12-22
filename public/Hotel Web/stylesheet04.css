@@ -1,0 +1,114 @@
+body,
+html {
+    height: 100%;
+   
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.bgImage {
+    background-image: url(background.jpg);
+    height: 100%;
+
+    /*Add the blur effect*/
+    filter: blur(4px);
+    -webkit-filter: 5px;
+
+    /*center and scale image nicely*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Position text in the middle of the page/image */
+.bgText {
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    display: inline;
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+li a :hover {
+    background-color: #f1eaea;
+}
+.container{
+    background-color: rgb(250, 235, 215);
+}
+
+.h1 {
+    align-items: center;
+}
+
+.images {
+    display: flex;
+
+}
+
+h3,p {
+    display: flex;
+    background-color: antiquewhite;
+    position: relative;
+}
+
+.form{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.col1 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col2 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+footer{
+    background-color: #ccc;
+    text-align: right;
+    padding: 20px;
+    height: 1%;
+    width: 100%;
+}

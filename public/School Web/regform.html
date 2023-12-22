@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="regStyle.css">
+    <style>
+        body,
+        html {
+            height: 100%;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .bgImage {
+            background-image: url(school.jpg);
+            height: 100%;
+            /*center image*/
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .bgText {
+            background-color: rgb(191, 183, 226);
+            color: rgb(12, 11, 11);
+            font-weight: bold;
+            border: none;
+            position: absolute;
+            top: 40%;
+            left: 5%;
+            transform: translate(-50% -50%);
+            z-index: 0;
+            width: 80%;
+            padding: 20px;
+            text-align: center;
+
+        }
+
+        .bgText:hover{
+            transform: scale(1.2);
+        }
+
+        .navigation {
+            height: 100%;
+            width: 160px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #333;
+            overflow-x: hidden;
+            padding-top: 60px;
+        }
+
+        .navigation a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+
+        }
+
+        .navigation a:hover {
+            color: #f1f1f1;
+        }
+
+
+        .main,
+        .bgImage,
+        .bgText {
+            margin-left: 160px;
+            padding: 0px 10px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="bgImage"></div>
+    <h1 class="bgText">Cloud Institute<br>International School</h1>
+
+    <div class="navigation">
+
+        <a href="home.html">Home</a>
+        <a href="regform.html" class="active">Registration</a>
+        <a href="login.html">Login</a>
+        <a href="aboutus.html">About Us</a>
+    
+
+    </div>
+
+
+
+    <div class="main" id="bgImage02"></div>
+
+    <form class="main" id="form" name="myform" >
+        <table>
+            <caption style="font-size: x-large;">Registration Form</caption>
+            <tr>
+                <td>User ID</td>
+                <td><input type="text" id="uId">
+                    <br>
+                    <p id="demoID" class="demo"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="text" id="pword">
+                    <br>
+                    <p id="demoPword"class="demo" ></p>
+                </td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td><input type="text"  id="name">
+                    <p id="demoName" class="demo"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><input type="text" id="address">
+                    <br>
+                    <p id="demoAddr" class="demoOptional"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>Country</td>
+                <td>
+                    <select id="country" name="country">
+                        <option value="" selected  >(Please select a country)</option>
+                        <option value="sl">Sri Lanka</option>
+                        <option value="ind">India</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="can">Canada</option>
+                    </select>
+                    <p id="cdemo" class="demo"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>Zip code</td>
+                <td><input type="text" id="zip">
+                    <br>
+                    <p id="demoZip" class="demoOptional"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="text" id="email">
+                    <br>
+                    <p id="demoEmail" class="demo"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>Sex</td>
+                <td id="sex">
+                    <input type="radio" name="sex" value="f" id="female">Female
+                    <input type="radio" name="sex" value="m" id="male">Male
+                    <p id="demoSex" class="demo"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>Language</td>
+                <td id="lang">
+                    <input type="checkbox" id="eng">English <input type="checkbox" id="neng"> Non English
+                    <p id="demoLang" class="demo"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>About</td>
+                <td><textarea name="about" id="about"></textarea>
+                    <br>
+                    <p id="demoAbout" class="demoOptional"></p>
+                </td>
+            </tr>
+           
+                
+           
+        </table>
+        <td><button type="button"  id="submit" onclick="validateForm()" class="submit">Submit</button></td>
+    </form>
+    <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="#"><i><img src="ig.png"></i></a><a href="#"><i ><img src="sc.png"></i></a><a href="#"><i ><img src="tw.png"></i></a><a href="#"><i ><img src="fb.png"></i></a></div>
+            <ul class="list-inline">
+                <li ><a href="#">Home</a></li>
+                <li ><a href="#">Services</a></li>
+                <li ><a href="#">About</a></li>
+                <li ><a href="#">Terms</a></li>
+                <li ><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">Cloud Institute © 2023</p>
+        </footer>
+    </div>
+
+    <script src="reg.js"></script>
+
+
+</body>
+
+</html>

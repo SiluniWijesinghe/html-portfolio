@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="homeStyle.css">
+    <style>
+        body,
+        html {
+            height: 100%;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .bgImage {
+            background-image: url(school.jpg);
+            height: 100%;
+            /*center image*/
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .bgText {
+            background-color: rgb(191, 183, 226);
+            color: rgb(12, 11, 11);
+            font-weight: bold;
+            border: none;
+            position: absolute;
+            top: 40%;
+            left: 5%;
+            transform: translate(-50% -50%);
+            z-index: 0;
+            width: 80%;
+            padding: 20px;
+            text-align: center;
+
+        }
+        .bgText:hover{
+            transform: scale(1.2);
+        }
+
+        .navigation{
+            height: 100%;
+            width: 160px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #333;
+            overflow-x: hidden;
+            padding-top: 60px;
+        }
+        .navigation a{
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+
+        }
+        .navigation a:hover{
+            color: #f1f1f1;
+        }
+        .main,.bgImage,.bgText{
+            margin-left: 160px;
+            padding: 0px 10px;
+        }
+
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="bgImage"></div>
+    <h1 class="bgText">Cloud Institute<br>International School</h1>
+
+    <div class="navigation">
+        
+            <a href="home.html">Home</a>
+            <a href="regform.html">Registration</a>
+            <a href="login.html">Login</a>
+            <a href="aboutus.html">About Us</a>
+            
+        
+    </div>
+
+    <div class="main">
+        <h2 style="color: brown;font-weight: bold;text-align: center;font-size: 40px;">Experience a Holistic Educational Journey at Cloud
+            Institute</h2>
+        <p  id="quote">“A charismatic personality is built up of diverse elements including affability and
+            strong interpersonal skills
+            ornamented with great accomplishments made in academics, career and life.”</p>
+        <table>
+            <tr>
+                <td><h5>INSPIRE</h5>students to believe that learning is a lifelong adventure and that success means doing our
+                    best, being and feeling proud about our efforts</td>
+                <td><img src="i01.jpg" class="tableImage"></td>
+            </tr>
+            <tr>
+                <td><h5>FOSTER</h5>a learning environment that promotes the freedom to wonder, to ask, to explore and to imagine.
+                </td>
+                <td><img src="i02.jpg" class="tableImage"></td>
+            </tr>
+            <tr>
+                <td><h5>CREATE</h5>an atmosphere where students are accepted for their special talents and individual uniqueness.
+                </td>
+                <td><img src="i03.jpg" class="tableImage"></td>
+            </tr>
+            <tr>
+                <td><h5>DEVELOP</h5>a positive learning community that instills character traits of respect, responsibility,
+                    fairness, honesty, perseverance, trustworthiness, caring, compassion and citizenship</td>
+                <td><img src="i04.jpg" class="tableImage"></td>
+            </tr>
+        </table>
+    </div>
+    <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="#"><i><img src="ig.png"></i></a><a href="#"><i ><img src="sc.png"></i></a><a href="#"><i ><img src="tw.png"></i></a><a href="#"><i ><img src="fb.png"></i></a></div>
+            <ul class="list-inline">
+                <li ><a href="#">Home</a></li>
+                <li ><a href="#">Services</a></li>
+                <li ><a href="#">About</a></li>
+                <li ><a href="#">Terms</a></li>
+                <li ><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">Cloud Institute © 2023</p>
+        </footer>
+    </div>
+
+
+</body>
+
+</html>

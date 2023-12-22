@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About Us</title>
+    <link rel="stylesheet" href="aboutStyle.css">
+    <style>
+        body,
+        html {
+            height: 100%;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .bgImage {
+            background-image: url(school.jpg);
+            height: 100%;
+            /*center image*/
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .bgText {
+            background-color: rgb(191, 183, 226);
+            color: rgb(12, 11, 11);
+            font-weight: bold;
+            border: none;
+            position: absolute;
+            top: 40%;
+            left: 5%;
+            transform: translate(-50% -50%);
+            z-index: 0;
+            width: 80%;
+            padding: 20px;
+            text-align: center;
+
+        }
+        .bgText:hover{
+            transform: scale(1.2);
+        }
+
+        .navigation {
+            height: 100%;
+            width: 160px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #333;
+            overflow-x: hidden;
+            padding-top: 60px;
+        }
+
+        .navigation a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+
+        }
+
+        .navigation a:hover {
+            color: #f1f1f1;
+        }
+
+        .main,
+        .bgImage,
+        .bgText {
+            margin-left: 160px;
+            padding: 0px 10px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="bgImage"></div>
+    <h1 class="bgText">Cloud Institute<br>International School</h1>
+
+    <div class="navigation">
+
+        <a href="home.html">Home</a>
+        <a href="regform.html">Registration</a>
+        <a href="login.html">Login</a>
+        <a href="aboutus.html">About Us</a>
+       
+
+    </div>
+
+    <div class="main">
+        <h2>A Tradition Of Excellence</h2>
+        <p>The premier private sector international educational institute in Sri Lanka, Cloud Institute International
+            School in Sri Lanka is recognized exclusively for its unblemished reputation in producing charismatic global
+            citizens resplendent with knowledge, skills and humanity.
+
+            Its far-reaching roots date back to 1971, when the Founder Chairman, Mr. G. T. Bandara, laid the strong
+            foundation to a ‘home away from home’, where hundreds and thousands of youngsters found love, care and
+            warmth to an extent more than their parents could have ever envisaged. With the gentle but sturdy growth of
+            the learners, grew the institution, spreading its mighty wings to serve and shield thousands of more
+            youngsters of tomorrow.
+
+            Cloud Institute International School has flourished day after day, year after year, not only in numbers, but
+            with sheer reputation and recognition for its unmatchable academic excellence and more importantly for the
+            values it has inculcated in the hearts of young learners!
+
+            We warmly welcome you to explore and experience countless opportunities and endless possibilities Cloud
+            Institute International School offers your child!
+
+            Cloud Institute also provides online school through RI Smart Academy.
+        </p>
+    </div>
+    <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="#"><i><img src="ig.png"></i></a><a href="#"><i ><img src="sc.png"></i></a><a href="#"><i ><img src="tw.png"></i></a><a href="#"><i ><img src="fb.png"></i></a></div>
+            <ul class="list-inline">
+                <li ><a href="#">Home</a></li>
+                <li ><a href="#">Services</a></li>
+                <li ><a href="#">About</a></li>
+                <li ><a href="#">Terms</a></li>
+                <li ><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">Cloud Institute © 2023</p>
+        </footer>
+    </div>
+
+
+</body>
+
+</html>
